@@ -1,0 +1,136 @@
+/*Footer*/
+.footer__wrapper {
+  position: relative;
+}
+.footer {
+  color: #fff;
+  position: absolute;
+  top: -870px;
+  left: 0;
+  width: 93%;
+  height: 870px;
+  background: #316099;
+  border-radius: 0px 200px 0px 0px;
+
+  &__row {
+    position: relative;
+    padding-top: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  }
+  &__row::after {
+    position: absolute;
+    top: 500px;
+    left: -300px;
+    content: '';
+    width: 132%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+  }
+  &__title {
+display: flex;
+flex-direction: column;
+  }
+  &__major {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 700;
+    width: 520px;
+    height: 148px;
+    font-size: 52px;
+    line-height: 74px;
+    margin-bottom: 35px;
+  }
+
+  &__paragraph {
+    width: 425px;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+    margin-bottom: 80px;
+    letter-spacing: 0.05em;
+  }
+
+  &__btn {
+    cursor: pointer;
+    text-align: center;
+    width: 220px;
+    height: 56px;
+    padding: 14px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  &__contacts {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__logo {
+    display: flex;
+    padding-bottom: 32px;
+    img {
+      padding-right: 10px;
+    }
+  }
+   &__logoTitle {
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+  }
+  &__column1 {
+    flex-basis: 25%;
+    letter-spacing: 0.05em;
+    line-height: 26px;
+a {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+}
+.footer__link {
+  padding-bottom: 24px;
+  &A:before {
+    content: 'A.';
+    padding-right: 16px;
+  }
+  &T:before {
+    content: 'T.';
+    padding-right: 16px;
+  }
+  &E:before {
+    content: 'E.';
+    padding-right: 16px;
+  }
+}
+  }
+
+  &__column2 {
+a {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+}
+}
+&__column2:nth-child(2) {
+  padding-right: 0;
+}
+&__listTitle {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 32px;
+}
+&__linkContacts {
+  padding-bottom: 16px;
+}
+&__copyright {
+  opacity: 0.4;
+}
+}
