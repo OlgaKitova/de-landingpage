@@ -1,6 +1,6 @@
 {
   "env": {
-    "jquery": true
+    "jquery": false
   },
   "overrides": [
     {

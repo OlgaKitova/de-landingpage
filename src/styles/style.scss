@@ -2,20 +2,25 @@
 
 @import "common/header";
 
+
 @import "common/footer";
+
+@import "utils/fonts.scss";
 /*Page Home*/
 /*Section Primary*/
 
 .primary {
   position: relative;
-  height: 768px;
-  background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  height: 123vh;
+  background: linear-gradient(0deg, rgba(152, 195, 232, 1) 8.84%, rgba(152, 195, 232, 0.2) 31.12%);
   display: flex;
 
 
 &__title {
   padding-top: 180px;
   width: 510px;
+  position: relative;
+  z-index: 2;
 }
 
 &__major {
@@ -25,7 +30,7 @@
   height: 148px;
   font-size: 52px;
   line-height: 74px;
-  color: #1F3F68;
+  color: rgba(31, 63, 104, 1);
   margin-bottom: 35px;
 }
 
@@ -50,6 +55,11 @@
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+  transition: all 0.3s ease-in;
+  &:hover {
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 1);
+    transition: all 0.3s ease-in;
+  }
 }
 
 &__img {
@@ -218,7 +228,123 @@
 &__item:nth-child(8) {
   cursor: pointer;
   background-color: rgba(31, 63, 104, 0.2);
-  ;
+  transition: all 0.3s ease-in;
+  &:hover {
+     background-color: rgba(31, 63, 104, 0.5);
+      transition: all 0.3s ease-in;
+  }
 }
 }
 /*Contacts Home*/
+.main__contacts {
+padding-bottom: 1000px;
+
+}
+.contacts__title {
+  background: rgba(31, 63, 104, 0.2) url(../img/contacts.png) center center no-repeat;
+  margin-top: 21vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__major {
+  font-size: 44px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 1);
+}
+.contacts__paragraph {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts__info {
+  color: #1F3F68;
+  margin-top: 9vh;
+}
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts__img {
+  margin-bottom: 70px;
+}
+.contacts__address,
+.contacts__phone {
+  margin-bottom: 40px;
+}
+.contacts__chief {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+.contacts__graph {
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+opacity: 0.6;
+width: 48vh;
+}
+.contacts__list {
+  opacity: 0.6;
+}
+.contacts__link > a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  padding-left: 40px;
+}
+.contacts__icon {
+  position: relative;
+}
+.contacts__icon::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+content:'';
+width: 24px;
+height: 24px;
+display: inline-block;
+background-image: url(../img/phone.png);
+}
+.contacts__iconWWW {
+position: relative;
+
+&::before {
+ position: absolute;
+ left: 0;
+ top: 0;
+ content:'';
+ width: 24px;
+ height: 24px;
+ display: inline-block;
+ background-image: url(../img/www.png);
+}
+}
+.contacts__iconMail {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../img/email.png);
+  }
+}
+.contacts__map {
+  margin-top: 100px;
+}

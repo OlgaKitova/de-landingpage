@@ -47,11 +47,11 @@ body {
 
 body {
   max-width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'GilroyRegular', sans-serif;
 }
 
 a {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'GilroyRegular',sans-serif;
 }
 
 input,
@@ -99,4 +99,218 @@ h6 {
 .container {
     width: 940px;
     margin: 0 auto;
+}
+@media(max-width: 1200px) {
+h2.advantages__title {
+  position: static;
+}
+}
+@media(max-width: 1024px) {
+  .container {
+    width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .primary__img {
+    opacity: 0.2;
+  }
+  h1.primary__major {
+    font-size: 46px;
+    width: 400px;
+    line-height: 64px;
+    margin-bottom: 45px;
+  }
+div.advantages__column {
+  padding-right: 20px;
+}
+}
+@media(max-width: 876px) {
+h2.advantages__title {
+  font-size: 24px;
+}
+.advantages__wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2.advantages__title {
+  width: 400px;
+  margin-bottom: 10px;
+}
+.advantages__column {
+  padding-right: 0;
+  margin-bottom: 100px;
+}
+.clients__title {
+  margin-top: 10vh;
+}
+footer.footer {
+  margin-top: -800px;
+  height: 800px;
+}
+.footer__row {
+  padding-top: 50px;
+  flex-direction: column;
+}
+h2.footer__major {
+  font-size: 24px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.footer__btn {
+  margin-right: 125px;
+}
+div.footer__contacts {
+  padding-top: 80px;
+  justify-content: space-evenly;
+}
+div.footer__column1,
+li.footer__link,
+div.footer__column1 a,
+div.footer__column2 a {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+div.footer__listTitle {
+  font-size: 18px;
+}
+div.footer__column1 li.footer__link {
+  padding-bottom: 10px;
+}
+}
+@media(max-width: 740px) {
+  .container {
+    max-width: 500px;
+  }
+  .clients__title {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.clients__item {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .footer__copyright {
+    padding-top: 10px;
+  }
+}
+@media(max-width: 590px) {
+  h2.footer__major {
+    font-size: 16px;
+    height: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p.footer__paragraph {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer__btn {
+    margin-right: 0;
+  }
+  div.footer__contacts {
+    padding-top: 140px;
+  }
+}
+@media(max-width: 320px) {
+  .primary {
+    padding: 0 10px;
+  }
+  div.primary__title {
+    padding-top: 120px;
+  }
+  h1.primary__major {
+    font-size: 18px;
+    width: 250px;
+    text-align: center;
+  }
+  p.primary__paragraph {
+    font-size: 12px;
+    width: 250px;
+     text-align: center;
+  }
+  button.primary__btn {
+    width: 50%;
+  }
+  h2.advantages__title {
+    font-size: 16px;
+    width: 50%;
+  }
+  div.advantages__column {
+    padding-right: 0;
+    height: 320px;
+  }
+  div.advantages__img {
+display: none;
+  }
+  h3.advantages__major  {
+    text-align: center;
+font-size: 16px;
+padding-top: 10px;
+  }
+  p.advantages__paragraph {
+    text-align: center;
+font-size: 12px;
+  }
+ .advantages div.cards {
+   position: static;
+    width: 250px;
+    padding: 10px;
+  }
+  .advantages  .cards:nth-child(3) {
+    position: static;
+    display: none;
+  }
+  .advantages__column:nth-child(2) {
+    display: block;
+    width: 2100px;
+    height: 200px;
+  }
+  div.clients__title {
+    margin-bottom: 30px;
+  }
+  h2.clients__major {
+    font-size: 24px;
+  }
+  p.clients__paragraph {
+    font-size: 12px;
+  }
+  section.advantages {
+    padding-top: 100px;
+  }
+  div.clients__table {
+    width: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  footer.footer {
+margin-top: -1000px;
+height: 1000px;
+}
+h2.footer__major {
+  text-align: left;
+  padding-left: 20px;
+}
+p.footer__paragraph {
+  width: 300px;
+  padding-left: 20px;
+
+}
+.footer__btn {
+  margin-left: -200px;
+}
+div.footer__contacts {
+flex-wrap: wrap;
+width: 300px;
+padding-top: 10px;
+}
+div.footer__column1 {
+  flex-basis: 80%;
+}
+div.footer__column2 {
+  flex-basis: 50%;
+}
+.footer__copyright {
+  padding-top: 50px;
+}
 }
