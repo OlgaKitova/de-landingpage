@@ -181,6 +181,9 @@ div.footer__column1 li.footer__link {
   .container {
     max-width: 500px;
   }
+  li.header__link > a {
+    font-size: 12px;
+  }
   .clients__title {
     flex-direction: column;
     align-items: center;
@@ -194,6 +197,17 @@ div.footer__column1 li.footer__link {
   }
 }
 @media(max-width: 590px) {
+  nav.header__menu {
+    height: 15%;
+  }
+  ul.header__list {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav.header__menu.active {
+    left: 15vh;
+  }
   h2.footer__major {
     font-size: 16px;
     height: 70px;
@@ -213,6 +227,9 @@ div.footer__column1 li.footer__link {
   }
 }
 @media(max-width: 320px) {
+  li.header__link > a {
+    font-size: 9px;
+  }
   .primary {
     padding: 0 10px;
   }

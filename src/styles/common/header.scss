@@ -3,26 +3,39 @@
 .header {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 90vw;
-  height: 50px;
-  z-index: 2;
+  left: 0;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+  }
  &__wrapper {
-  padding-top: 40px;
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px;
+   height: 130px;
   position: relative;
-  width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-&__logo {}
+&__logo {
+  position: relative;
+  z-index: 7;
+}
 
 &__burger {
+  position: relative;
   cursor: pointer;
   width: 24px;
   height: 16px;
+  z-index: 7;
 }
 
 &__burger span {
@@ -32,8 +45,11 @@
   width: 24px;
   height: 2px;
   background: #356EAD;
+   transition: all 0.3s ease-in;
 }
-
+&__burger.active span {
+  display: none;
+}
 &__burger:before {
   display: block;
   position: relative;
@@ -43,8 +59,12 @@
   width: 24px;
   height: 2px;
   background: #356EAD;
+   transition: all 0.3s ease-in;
 }
-
+&__burger.active::before {
+  top: 0;
+transform: rotate(45deg);
+}
 &__burger:after {
   display: block;
   position: relative;
@@ -54,9 +74,35 @@
   width: 24px;
   height: 2px;
   background: #356EAD;
+   transition: all 0.3s ease-in;
 }
-
+&__burger.active::after {
+  bottom: 2px;
+  transform: rotate(-45deg);
+}
 &__menu {
-  position: absolute;
+  padding-top: 2%;
+  position: fixed;
+  z-index: 6;
+  left: -100%;
+  top: 5vh;
+  width: 60%;
+  height: 12%;
+  background-color: rgba(53, 110, 173, 0.6);
+  border-radius: 5px;
+  transition: all 0.5s ease-in;
+}
+&__menu.active {
+  left: 25vh;
+}
+&__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+&__link > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
 }
 }

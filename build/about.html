@@ -14,7 +14,14 @@
       <div class="header__wrapper">
         <div class="header__logo"><img src="./img/logo.png"></div>
         <div class="header__burger"><span></span></div>
-        <aside class="header__menu"></aside>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__link"><a href="#" target="_blank">About</a></li>
+            <li class="header__link"><a href="#" target="_blank">What We Do</a></li>
+            <li class="header__link"><a href="#" target="_blank">Project</a></li>
+            <li class="header__link"><a href="#" target="_blank">How It Work With Us</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main__contacts">
@@ -51,7 +58,18 @@
               </div>
             </div>
             <div class="contacts__column">
-              <div class="contacts__form"></div>
+              <div class="contacts__form">
+                <h2 class="contacts__formTitle">Send us message</h2>
+                <form class="contacts__formTotal">
+                  <label for="#name">Full Name</label>
+                  <input id="name" type="name" placeholder="Your Name">
+                  <label for="#email">Email</label>
+                  <input id="email" type="email" placeholder="Your Email">
+                  <label for="#text">Message</label>
+                  <textarea id="text" placeholder="Your Message"></textarea>
+                  <button class="contacts__btn" type="submit">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
