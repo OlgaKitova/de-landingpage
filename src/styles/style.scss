@@ -8,7 +8,10 @@
 @import "utils/fonts.scss";
 /*Page Home*/
 /*Section Primary*/
-
+.show {
+  display: block;
+  transition: all 0.3s ease-in;
+}
 .primary {
   position: relative;
   height: 123vh;
