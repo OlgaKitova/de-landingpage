@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-
+const serverPHP = require('./gulp/tasks/serverPHP')
 const serve = require('./gulp/tasks/serve')
 const pug2html = require('./gulp/tasks/pug2html')
 const styles = require('./gulp/tasks/styles')
@@ -18,7 +18,7 @@ function setMode(isProduction = false) {
   }
 }
 
-const dev = gulp.parallel(pug2html, styles, script, fonts, imageMinify, svgSprite)
+const dev = gulp.parallel(pug2html, styles, script, fonts, imageMinify, svgSprite, serverPHP)
 
 const build = gulp.series(clean, copyDependencies, dev)
 

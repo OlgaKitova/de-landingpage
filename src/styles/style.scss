@@ -423,3 +423,34 @@ color: #1F3F68;
   padding: 23px 184px;
   margin-bottom: 56px;
 }
+/*Form submit*/
+input:invalid {
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none
+}
+
+.error {
+  display: block;
+  color: #900;
+  padding: 2px;
+}
+.statusTitle,
+.statusAbout {
+display: none;
+width: 30vw;
+height: 20vh;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%);
+background-color:rgba(16, 112, 177, 1);
+color:rgba(255, 255, 255, 1);
+font-size: 16px;
+text-align: center;
+padding: 10px;
+z-index: 21;
+}

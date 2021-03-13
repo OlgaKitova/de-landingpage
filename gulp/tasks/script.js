@@ -36,4 +36,3 @@ module.exports = function script() {
     }))
     .pipe(gulp.dest('build/js'))
 }
-

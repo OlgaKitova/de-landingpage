@@ -137,17 +137,18 @@
             <div class="popup__dialog">
               <div class="popup__content">
                 <div class="popup__close"></div>
-                <div class="contacts__form">
-                  <h2 class="contacts__formTitle">Send us message</h2>
-                  <form class="contacts__formTotal">
-                    <label for="#name">Full Name</label>
-                    <input class="footer__change" id="name" type="name" placeholder="Your Name">
-                    <label for="#email">Email</label>
-                    <input class="footer__change" id="email" type="email" placeholder="Your Email">
-                    <label for="#text">Message</label>
-                    <textarea class="footer__change" id="text" placeholder="Your Message"></textarea>
-                    <button class="contacts__btn footer__change" type="submit">Submit</button>
+                <div class="footer__form">
+                  <h2 class="footer__formTitle">Send us message</h2>
+                  <form class="footer__formTotal" action="sender/sender.php" method="POST" novalidate>
+                    <label for="#username">Full Name</label>
+                    <input id="username" type="text" name="name" placeholder="Your Name">
+                    <label for="#mail">Email</label>
+                    <input id="mail" type="email" name="email" placeholder="Your Email"><span class="error" aria-live="polite"></span>
+                    <label for="#message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    <button class="footer__button" type="submit">Submit</button>
                   </form>
+                  <div class="statusTitle"></div>
                 </div>
               </div>
             </div>
