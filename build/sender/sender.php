@@ -4,11 +4,11 @@
     $text = $_POST['message'];
 
 
-	$to = "kitova155@gmail.com";
+	$to = "olga_and_kitova@bk.ru";
 	$date = date ("d.m.Y");
 	$time = date ("h:i");
 	$from = $email;
-	$subject = "Заявка c сайта";
+	$subject = "Сообщение";
 
 
 	$msg="

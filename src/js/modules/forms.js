@@ -32,7 +32,6 @@ const take__send__form = function (form__title, status__title, name, email, text
     const postData = async (url, data) => {
       status.style.display = 'block';
       status.textContent = message.loading;
-      document.body.style.overflow = 'hidden';
       let res = await fetch(url, {
         method: "POST",
         body: data
