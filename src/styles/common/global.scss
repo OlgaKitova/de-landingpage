@@ -123,6 +123,12 @@ h2.advantages__title {
 div.advantages__column {
   padding-right: 20px;
 }
+div.contacts__wrapper {
+justify-content: center;
+}
+div.contacts__column {
+  flex: 0 1 auto;
+}
 }
 @media(max-width: 876px) {
 h2.advantages__title {
@@ -226,7 +232,7 @@ div.footer__column1 li.footer__link {
     padding-top: 140px;
   }
 }
-@media(max-width: 320px) {
+@media(max-width: 500px) {
   li.header__link > a {
     font-size: 9px;
   }
@@ -237,7 +243,7 @@ div.footer__column1 li.footer__link {
     padding-top: 120px;
   }
   h1.primary__major {
-    font-size: 18px;
+    font-size: 30px;
     width: 250px;
     text-align: center;
   }
@@ -300,6 +306,9 @@ font-size: 12px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+  .footer__row {
+    margin-top: 50px;
+  }
   footer.footer {
 margin-top: -1000px;
 height: 1000px;
@@ -329,5 +338,33 @@ div.footer__column2 {
 }
 .footer__copyright {
   padding-top: 50px;
+}
+section.contacts__title {
+  height: 50vh;
+}
+div.contacts__major,
+div.contacts__paragraph,
+div.contacts__img {
+  width: 320px;
+}
+div.contacts__form,
+div.footer__form {
+  width: 320px;
+}
+div.contacts__wrapper {
+  justify-content: start;
+}
+input#name,
+input#username,
+input#email,
+input#mail,
+textarea#text,
+textarea#message {
+  padding: 0 5px;
+  font-size: 10px;
+}
+button.contacts__btn,
+button.footer__button {
+  padding: 5px 0;
 }
 }
